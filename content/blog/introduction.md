@@ -3,7 +3,7 @@ title = "The reason you're here"
 description = "The reason I decided to create coDesign. A brief introduction"
 image = "/article-img/introduction.png"
 type = "post"
-date = "2017-12-6"
+date = 2017-10-21
 +++
 
 I am a code+design enthusiast; and I’m sure since you’re reading this, you’re one as well. I’m an avid reader as well, and for obvious reasons, I’m going to go ahead and assume you’re one too.
