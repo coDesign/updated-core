@@ -1,6 +1,6 @@
 +++
 title = "The reason you're here"
-description = "The reason I decided to create "coDesign." A brief introduction"
+description = "The reason I decided to create coDesign. A brief introduction"
 image = "/article-img/introduction.png"
 type = "post"
 date = "2017-12-6"
