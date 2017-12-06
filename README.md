@@ -1,12 +1,9 @@
-# Chorale Site
+# The coDesign Publication
 
-[![Join Discord](https://img.shields.io/discord/330694680318574592.svg?style=flat-square)](https://discord.gg/BUbfvsM)
-[![Website Status](https://img.shields.io/website-up-down-green-red/https/www.choraleapp.com.svg?label=status&style=flat-square)](https://www.choraleapp.com)
-[![Twitter Follow](https://img.shields.io/twitter/follow/choraleapp.svg?style=social&label=follow)](https://twitter.com/choraleapp)
-[![Codacy Grade](https://img.shields.io/codacy/grade/6b6c56008b8f4518aa074da6fa16f016.svg?style=flat-square)](https://www.codacy.com/app/git_19/chorale?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=choraleapp/chorale&amp;utm_campaign=Badge_Grade)
-[![Codacy Coverage](https://img.shields.io/codacy/coverage/6b6c56008b8f4518aa074da6fa16f016.svg?style=flat-square)](https://www.codacy.com/app/git_19/chorale?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=choraleapp/chorale)
+[![Join Telegram](https://t.me/thecodesignpub)
+[![Follow us on Twitter(https://img.shields.io/twitter/follow/choraleapp.svg?style=social&label=follow)](https://twitter.com/thecodesignpub)
 
-Everything here rests on the [www.choraleapp.com](https://www.choraleapp.com) domain. The entire website is built using [Hugo](https://gohugo.io), a static site generator in Go, then the SCSS and JS resources are piped through Gulp for optimizations. The end result is constructed and hosted on [Netlify](https://www.netlify.com/?ref=choraleappdotcomgithub).
+Everything housed here comes together to form [thecodesign.io](https://thecodesign.io). The entire product is built using [Hugo](https://gohugo.io), a static site generator in Go, with the SCSS and JS resources being piped through Gulp for optimisations. The end result is constructed and hosted on [Netlify](https://www.netlify.com/?ref=choraleappdotcomgithub).
 
 ## Browser support
 
@@ -29,7 +26,7 @@ Feel free to open an issue for any bug, feature, or request. If you want to make
 
 ## License
 
-Copyright Chorale, 2017
+Copyright coDesign, 2017
 
 Licensed under the Apache License, Version 2.0 (the “License”);
 you may not use this file except in compliance with the License.
