@@ -1,0 +1,54 @@
+html {
+  font-family: sans-serif;
+  background: $default-bg;
+  color: $regular-text-color;
+  line-height: 1.5;
+  z-index: index($layers, root);
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+
+mark {
+  background: $regular-text-color;
+  color: invert($bold-text-color);
+}
+
+hr {
+  margin: 0;
+  border: 0;
+  border-bottom: 0.1rem solid rgba($bold-text-color, 0.125);
+}
+
+svg {
+  height: 1rem;
+  width: 1rem;
+  position: relative;
+  top: 0.15rem;
+
+  path, g { fill: $regular-text-color; }
+}
+
+a {
+  color: $brand-main;
+
+  &:hover { color: $bold-text-color; }
+  &:active { opacity: 0.8; }
+}
+
+::selection {
+  background: #B4D5FF; // default on Macs probably
+  color: #000;
+}
+
+img {
+  opacity: 1;
+  transition: opacity 0.4s;
+}
+
+blockquote {
+  padding: 0.25rem 1rem;
+  margin: 2rem 0;
+  border-left: 0.1rem solid currentColor;
+}
+
+img[data-src] { opacity: 0; }

@@ -1,0 +1,27 @@
+{{ partial "meta.html" . }}
+<body class="help">
+{{ partial "nav.html" . }}
+<div class="header-cover"></div>
+
+<div class="container container--unpadded">
+  <div class="row">
+    <aside class="col-quarter help-sidebar container">
+      <div class="break"></div><div class="break-sm"></div>
+      <h1 class="h2 ingrained"><b>
+        <a href="/support/" class="bold ingrained">How can we help you?</a>
+      </b></h1>
+      <div class="break-sm"></div>
+
+      {{ partial "help-items.html" . }}
+
+      <div class="break"></div><div class="break-sm"></div>
+    </aside>
+    <main class="col">
+      <div class="container container--narrow"><div class="container">
+        {{ .Content }}
+      </div></div>
+    </main>
+  </div>
+</div>
+
+{{ partial "footer.html" . }}

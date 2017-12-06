@@ -1,0 +1,4 @@
+baseURL = "https://www.choraleapp.com"
+title = "Chorale Music"
+languageCode = "en"
+pluralizelisttitles = false

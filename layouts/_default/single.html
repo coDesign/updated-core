@@ -1,0 +1,5 @@
+{{ partial "meta.html" . }}
+<body {{ with .Params.class }} class="index {{ . }}" {{ else }}class="default"{{ end }}>
+{{ partial "nav.html" . }}
+{{ .Content }}
+{{ partial "footer.html" . }}

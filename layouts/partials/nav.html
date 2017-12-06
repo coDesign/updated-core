@@ -1,0 +1,56 @@
+<nav class="nav-bar">
+  <div class="container">
+    <ul class="nav-bar__list">
+      <li class="nav-bar__logo">
+        <a href="/#">
+          <img src="/logo/logo-black.svg">
+        </a>
+      </li>
+
+      {{ partial "nav-items.html" . }}
+
+      <li class="nav-bar__cta"><a href="https://the.choraleapp.com">Login
+        <svg viewBox="0 0 24 24">
+          <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+        </svg>
+      </a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<nav class="nav-mobile">
+  <a href="/#" class="nav-mobile__logo">
+    <img src="/logo/logo-black.svg">
+  </a>
+
+  <svg class="nav-mobile__menu" viewBox="0 0 24 24">
+    <path class="nav-mobile__menu--open" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+    <path class="nav-mobile__menu--close" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+  </svg>
+
+  <div class="nav-mobile__list">
+    <div class="container"><div class="container">
+      <div class="break-sm"></div>
+      <ul class="no-bullet h4">
+        {{ partial "nav-items.html" . }}
+      </ul>
+      <div class="break-sm"></div>
+
+      <hr><div class="break-sm"></div>
+
+      <ul class="no-bullet half-list">
+        {{ partial "nav-items-secondary.html" . }}
+      </ul>
+    </div></div>
+
+    <a href="https://the.choraleapp.com" class="h4 container faded-bg">
+      <div class="container">
+        Login
+        <svg viewBox="0 0 24 24">
+          <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+        </svg>
+      </div>
+    </a>
+  </div>
+</nav>

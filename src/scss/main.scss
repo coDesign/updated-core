@@ -1,0 +1,746 @@
+/**
+ * This file is used as the "compile point".
+ * Here, everything is saved into one.
+ * CSS must be compiled into /static then
+ * commited. It's not built on the fly.
+ */
+
+// Libraries
+@import 'lib/stableset';
+@import 'lib/gridly';
+@import 'lib/wiclwic';
+
+// Reusable parts
+@import 'components/vars';
+@import 'components/root';
+@import 'components/dropins';
+@import 'components/snacks';
+
+// Technically not a lib
+@import 'lib/modals';
+
+
+/**
+ * Elements
+ */
+
+
+.hx { font-size: 4rem;   font-family: 'Montserrat', sans-serif; }
+.h0 { font-size: 2.5rem; font-family: 'Montserrat', sans-serif; }
+.h1 { font-size: 2rem;   font-family: 'Montserrat', sans-serif; }
+.h2 { font-size: 1.6rem; font-family: 'Montserrat', sans-serif; }
+.h3 { font-size: 1.5rem; font-family: 'Montserrat', sans-serif; }
+.h4 { font-size: 1.4rem; font-family: 'Montserrat', sans-serif; }
+.h5 { font-size: 1.125rem; }
+
+@media (max-width: 768px) {
+  .h0 { font-size: 1.8rem; }
+}
+
+.markdown-container {
+  a {
+    border-bottom: 0.1rem solid currentColor;
+  }
+
+  h1, h2, h4, h5, h6 {
+    color: $bold-text-color;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h3, h5, h6 { opacity: 0.6; }
+
+  table {
+    margin: 2rem 0;
+    display: block;
+    overflow: auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+
+  td, th {
+    padding: 1rem;
+    border: 0.1rem solid currentColor;
+  }
+
+  .highlighted-bg.container {
+    border-radius: 0.25rem;
+    margin: 2rem 0;
+  }
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.25rem; }
+  h5 { font-size: 1.125rem; }
+  h6 { font-size: 0.825rem; }
+
+  ol {
+    padding: 0 2rem;
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      list-style: none;
+
+      &::before {
+        content: " · ";
+        font-weight: bold;
+        padding: 0 0.5rem;
+      }
+    }
+  }
+}
+
+.btn {
+  padding: 0.8rem 1.4rem;
+  margin-right: 0.5rem;
+  border: 0;
+  background: transparent;
+  border: 0.1rem solid transparent;
+  cursor: pointer;
+  display: inline-table;
+
+  // Different form
+  &--block {
+    width: 100%;
+  }
+
+  // For SVGs
+  &--primary, &--secondary { svg path { fill: #fff; } }
+
+  // For all
+  &:active {
+    opacity: 0.8;
+    position: relative;
+    top: 0.125rem;
+  }
+
+  // Disabled
+  &[disabled] {
+    cursor: not-allowed;
+
+    &:active {
+      position: static;
+      opacity: 0.6;
+    }
+  }
+
+  // Also this
+  &--sq { padding: 0.8rem; }
+  &--rough { border-radius: 0; }
+
+  // Legacy
+  &--primary {
+    background: #000;
+    color: #fff;
+
+    &:hover {
+      background: $bold-text-color;
+      color: invert($bold-text-color);
+    }
+  }
+
+  &--secondary {
+    background: #000;
+    color: #000;
+
+    &:hover {
+      background: $bold-text-color;
+      color: invert($bold-text-color);
+    }
+  }
+
+  // New
+  &--black {
+    background: #000;
+    color: #fff;
+
+    &:hover {
+      background: silver;
+    }
+  }
+
+  &--white {
+    background: #fff;
+    color: #000;
+
+    &:hover {
+      background: #ededed;
+    }
+  }
+
+  &--bladark {
+    background: rgba(#000, 0.125);
+    color: #000;
+
+    &:hover {
+      background: rgba(#000, 0.2);
+    }
+  }
+
+  &--bladarkborder {
+    border-color: rgba(#000, 0.2);
+    color: #000;
+
+    &:hover {
+      border-color: rgba(#000, 0.4);
+    }
+  }
+
+  &--whidark {
+    background: rgba(#fff, 0.125);
+    color: #fff;
+
+    &:hover {
+      background: rgba(#fff, 0.2);
+      color: #fff;
+    }
+  }
+
+  &--border {
+    border-color: currentColor;
+    color: currentColor;
+
+    &:hover {
+      color: currentColor;
+      border: currentColor dotted 0.1rem;
+    }
+  }
+}
+
+.highlighted-bg {
+  background: $accented-bg;
+}
+
+.card {
+  border: 0.1rem solid rgba(#000, 0.125);
+  transition: border 0.2s, border-color 0.2s;
+  padding: 2rem;
+  display: block;
+  margin: 0 0.6rem;
+  will-change: transform;
+  transition: transform 0.2s;
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.pricing-card {
+  background: #eee;
+
+  &__content {
+    border-top: 0.1rem solid $border-color;
+  }
+
+  &__header { padding: 2rem 2.6rem; }
+  &__content { padding: 1rem; }
+}
+
+@media (min-width: 768px) {
+  .col:nth-child(1) .pricing-card .btn { border-right: 0; }
+  .col:nth-child(3) .pricing-card .btn { border-left: 0; }
+}
+
+.pricing-card--primary {
+  border: 0;
+
+  .pricing-card__header {
+    background: mix(#000, $border-color, 0);
+    color: #000;
+    border-bottom-color: mix(#000, $border-color, 0%);
+  }
+
+  .pricing-card__btn-cover { background: mix(#000, $border-color, 0%); }
+}
+
+.pricing-card--secondary {
+  border: 0;
+
+  .pricing-card__header {
+    background: mix(#000, $border-color, 4%);
+    color: #000;
+    border-bottom-color: mix(#000, $border-color, 4%);
+  }
+
+  .pricing-card__btn-cover { background: mix(#000, $border-color, 4%); }
+}
+
+
+/**
+ * Navigation
+ */
+
+.nav-bar {
+  position: absolute;
+  width: 100%;
+  z-index: index($layers, navroot);
+
+  a { color: #000; }
+  svg path { fill: #000; }
+
+  &--light {
+    a { color: #fff; }
+    svg path { fill: #fff; }
+  }
+
+  &__logo img {
+    margin-left: 0;
+    height: 1.4rem;
+    width: auto;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+
+    li { padding: 0 1.2rem; }
+
+    .nav-bar__logo { padding-left: 0; }
+    .nav-bar__list--last-item { margin-right: auto; }
+  }
+
+  // Try Chorale link padding fix
+  li.nav-bar__cta { padding-right: 0; }
+}
+
+// Hide mobile version by default
+.nav-mobile { display: none; }
+
+// Show mobile version when on mobile
+@media (max-width: 768px) {
+  // Hide desktop version
+  .nav-bar { display: none; }
+
+  // Show mobile version
+  .nav-mobile {
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: index($layers, navroot);
+
+    &.nav-mobile--light .nav-mobile__menu path {
+      fill: #fff;
+    }
+
+    // Menu specific
+    &__logo img {
+      height: 1.4rem;
+      width: auto;
+      display: inline-block;
+      margin: 0.8rem;
+    }
+
+    // Menu specific
+    &__menu {
+      float: right;
+      height: 1.4rem;
+      width: 1.4rem;
+      display: inline-block;
+      margin: 0.8rem;
+      position: static;
+
+      path { fill: #000; }
+      &--open { display: block; }
+      &--close { display: none; }
+    }
+
+    // Hide list if disabled
+    &__list { display: none; }
+
+    // Menu icon specific change
+    svg.nav-mobile__list-icon { margin: 0; top: 0.25rem; }
+  }
+
+  // When menu is open
+  .nav-mobile.nav-mobile--active {
+    // Show [X] on menu
+    .nav-mobile__menu {
+      &--open { display: none; }
+      &--close { display: block; }
+    }
+
+    // Show links
+    .nav-mobile__list {
+      display: block;
+      width: calc(100% - 2rem);
+      background: $default-bg;
+      box-shadow: $shadow2;
+      position: absolute;
+      top: 3rem;
+      left: 1rem;
+      animation: fadeup 0.2s;
+
+      ul {
+        line-height: 1.8;
+      }
+
+      a {
+        color: #000;
+      }
+    }
+  }
+}
+
+// Second nav
+.browse-bar {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 0.08rem solid #dedede;
+  z-index: index($layers, sticky);
+}
+
+// Old relic
+.header-cover {
+  height: 3.25rem;
+  background-color: #dedede;
+}
+
+@media (min-width: 768px) {
+  .header-cover { height: 3.5rem; }
+}
+
+
+/**
+ * Globals
+ */
+
+.gradient-bg {
+  background: linear-gradient(180deg, #eee, $default-bg 8%);
+}
+
+
+.larger-section {
+  padding: 4rem 2rem;
+}
+
+.faded-bg { background: #efefef; }
+
+@keyframes faded {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeup {
+  from { opacity: 0; transform: translateY(1rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.brand-section {
+  padding: 6rem 0;
+  color: #fff;
+  background: $brand-main;
+}
+
+.pre-footer {
+  padding-bottom: 3rem;
+  line-height: 1.25;
+
+  // HACK: https://github.com/sass/libsass/issues/151
+  .sponsor {
+    height: 1rem;
+    width: auto;
+    margin: 0.6rem 2rem;
+    filter: grayscale(1);
+
+    &:hover { filter: none; }
+  }
+
+  @media (max-width: 768px) {
+    .pre-footer__sponsors a {
+      display: block;
+
+      .sponsor {
+        height: 1.8rem;
+        margin: 0.6rem;
+      }
+    }
+  }
+
+  .sponsor[alt="Netlify"] {
+    transform: scale(1.125);
+  }
+}
+
+.choices-on-right {
+  .break-sm { display: none; }
+
+  @media (max-width: 768px) {
+    &__init, &__cta, .break-sm {
+      display: block;
+    }
+
+    .float-fix { position: static; }
+    .float-right { float: none; }
+  }
+}
+
+
+.footer {
+  &__icons svg {
+    height: 1.125rem;
+    width: 1.125rem;
+    margin: 0.8rem;
+    float: right;
+  }
+
+  // Let links breathe
+  ul { line-height: 1.8; }
+
+  &__logo {
+    height: 2rem;
+    position: relative;
+    top: 0.6rem;
+    margin-right: 0.6rem;
+  }
+
+  // For everything
+  svg path { fill: $bold-text-color; }
+}
+
+
+/**
+ * Other
+ */
+
+// Hide "Coded by Netlify"
+.callOut {
+  display: none;
+}
+
+.warning {
+  padding: 2rem;
+  background: $brand-yellow;
+  color: #000;
+  border-radius: 0.25rem;
+}
+
+.icon-grid {
+  padding: 1.5rem 0rem;
+
+  .col { padding: 1.25rem; }
+
+  @media (max-width: 768px) {
+    .col { padding-right: 0; }
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    display: inline-table;
+    border-radius: 50%;
+
+    path { fill: $bold-text-color; }
+  }
+}
+
+.comparison-table {
+  width: 100%;
+  overflow-x: auto;
+  text-align: center;
+  border-collapse: collapse;
+  table-layout: fixed;
+  display: block;
+
+  // Icons
+  svg {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  // Headings
+  th {
+    padding: 1rem 1.4rem;
+
+    img {
+      height: 1.4rem;
+      width: auto;
+    }
+
+    &.chorale {
+      padding-top: 1.5rem;
+    }
+  }
+
+  // Left side
+  .feature {
+    padding: 0.8rem;
+    border-right-color: $brand-main;
+
+    &--last { border-bottom: 0; }
+  }
+
+  // Every box (except headings)
+  td {
+    border-bottom: 0.1rem solid $border-color;
+    border-top: 0.1rem solid $border-color;
+  }
+
+  // Give Chorale focus
+  td.chorale {
+    border-color: $brand-main;
+    border-left: 0.1rem solid $brand-main;
+    border-right: 0.1rem solid $brand-main;
+    padding: 0.25rem 1.25rem;
+
+    svg path { fill: $brand-main; }
+  }
+
+  th.chorale {
+    border-left: 0.1rem solid $brand-main;
+    border-right: 0.1rem solid $brand-main;
+    border-top-color: $brand-main;
+    background: $brand-main;
+
+    &.last { border-bottom: 0.1rem solid $brand-main; }
+  }
+}
+
+.small-article {
+  display: inline-table;
+  padding: 1.5rem 0.5rem;
+  width: calc(33.3% - 0.5rem);
+
+  .background { min-height: 12rem; }
+}
+
+.long-article {
+  margin: 0.5rem;
+
+  &__details, &__bg { min-height: 20rem; }
+  &__details .container { padding: 2rem; }
+}
+
+@media (max-width: 768px) {
+  .long-article__details {
+    border: 0.1rem solid rgba($bold-text-color, 0.125);
+    border-top: 0;
+  }
+
+  .small-article {
+    display: block;
+    width: 100%;
+  }
+}
+
+// on /community/
+.person {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  margin: 0.5rem;
+  box-shadow: $shadow1;
+  cursor: pointer;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.25);
+  }
+  &:active {
+    transform: scale(1.125);
+  }
+
+  &--smaller { height: 4rem; width: 4rem; }
+}
+
+
+/**
+ * Page specific
+ */
+
+.hide-footer-breaker .footer__breaker { display: none; }
+
+.help-sidebar {
+  padding: 2.75rem;
+  border-bottom: 0.1rem solid rgba(#000, 0.125);
+}
+
+@media (min-width: 768px) {
+  .help-sidebar {
+    border-right: 0.1rem solid rgba(#000, 0.125);
+    padding: 0 1rem;
+    padding-right: 2rem;
+    border-bottom: 0;
+  }
+}
+
+.index .hero--flat {
+  color: #000;
+  background-color: #e5e5e5;
+
+  &__promo { color: #000; }
+  .btn--border { color: #000; }
+}
+
+.index .hero {
+  background: #dedede;
+  color: #000;
+}
+
+.index .hero img {
+  animation: fadeup 0.4s;
+}
+
+.poly-mask svg {
+  height: 6rem;
+  width: 100%;
+  position: relative;
+  top: -5.96rem;
+  z-index: index($layers, root);
+
+  polygon { fill: $default-bg; }
+}
+
+.poly-mask--gray svg { top: 0.525rem; }
+.poly-mask--gray svg polygon { fill: #1b1b1b; }
+
+.tour__wrapper {
+  background: #ee3439;
+  color: #fff;
+  z-index: index($layers, forceup);
+}
+
+.tour__laptop {
+  position: relative;
+  z-index: index($layers, forceup);
+}
+
+.tour__mask {
+  position: relative;
+  top: -18rem;
+}
+
+.tour__mask--extra-padding {
+  padding: 10rem;
+  background: #fff;
+  position: relative;
+  top: -6.5rem;
+}
+
+.flex-align {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tour__chat {
+  margin: 0 auto;
+  display: block;
+  width: 20rem;
+}
+
+.tour__customize {
+  margin: 0 auto;
+  display: block;
+  width: 40vh;
+}
+
+.tour__second-cta { background: #ee3439; }

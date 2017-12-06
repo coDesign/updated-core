@@ -1,0 +1,369 @@
+---
+title: Pricing
+type: basic
+---
+
+<main class="container">
+<div class="break"></div><div class="break"></div>
+<h1 class="h0 bold center"><strong>Fair &amp; reasonable pricing.</strong></h1>
+
+<p class="bold center pricing__details--wait">
+  Showing <u class="wait">monthly</u> pricing in
+  <u class="wait">EUR</u> <span class="ingrained">(using latest currency rates)</span>
+
+<p class="bold center pricing__details--success" hidden>
+  Showing <u class="pricing__timeframe clickable" onclick="changeTimeframe()">monthly</u> pricing in
+  <u class="pricing__currency-changer-button clickable" data-micromodal-trigger="currency-changer">EUR</u> <span class="ingrained">(using latest currency rates)</span></p>
+
+<p class="bold center pricing__details--failed" hidden>
+  Showing monthly pricing in EUR<br>
+  <em class="ingrained">Our currency conversion server seems to be offline. Sorry for the inconvience!</em>
+</p>
+
+
+<div class="break"></div>
+
+  <div class="row mobile-row">
+    <div class="col">
+    <figure class="pricing-card pricing-card--highlighted">
+      <div class="pricing-card__header">
+        <div class="break break-sm"></div>
+        <small class="ingrained caps"><b>Chorale Free</b></small>
+        <div class="break break-sm"></div>
+
+        <h2 class="h1 highlighted">
+          <strong>free</strong> <small>∞</small>
+        </h2>
+        <p>The basic plan is great for light listeners and makes very little comprimises.</p>
+      </div>
+        <a href="/early-access" class="btn btn--block btn--bladark btn--rough">Get free beta access</a>
+    </figure>
+    <div class="container">
+      <div class="break-sm"></div>
+      <p><b>Chorale Free includes:</b></p>
+
+      <ul class="no-bullet">
+        <li>
+          {{< partial "check.html" >}}&nbsp;
+          <a href="https://acceptableads.com/">Acceptable</a> ads
+        </li>
+        <li>
+          {{< partial "check.html" >}}&nbsp;
+          Tracks stream at 320 kbps
+        </li>
+        <li>
+          {{< partial "check.html" >}}&nbsp;
+          Upload 2 GB of own music
+        </li>
+        <li>
+          {{< partial "check.html" >}}&nbsp;
+          Best-effort support
+        </li>
+        <li>
+          {{< partial "cross.html" >}}&nbsp;
+          No offline listening
+        </li>
+        <li>
+          {{< partial "cross.html" >}}&nbsp;
+          Settings are limited
+        </li>
+        <li>
+          {{< partial "cross.html" >}}&nbsp;
+          No visualizer <a href="https://www.google.com/search?q=linear%20music%20visualizer%20images">[?]</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+
+    <!---->
+
+    <div class="col">
+    <figure class="pricing-card pricing-card--primary">
+      <div class="pricing-card__header">
+        <div class="break break-sm"></div>
+        <small class="caps"><b>Chorale Pass</b></small>
+        <div class="break break-sm"></div>
+
+        <h2 class="h1">
+          <strong><sup class="pricing__second-plan-currency">€</sup><span class="pricing__second-plan-cost">4</span></strong><small>/mo</small>
+        </h2>
+        <p>Most people should choose this plan, that unlocks all settings &amp; minimizes ads.</p>
+      </div>
+      <div class="pricing-card__btn-cover">
+        <a href="/early-access" class="btn btn--block btn--bladark btn--rough">Get free beta access</a>
+      </div>
+    </figure>
+    <div class="container">
+      <div class="break-sm"></div>
+      <p><b>Pass includes:</b></p>
+      <ul class="no-bullet">
+        <li>
+          {{< partial "check.html" >}}&nbsp;
+          Ads reduced by 65%
+        </li>
+        <li>
+          {{< partial "check.html" >}}&nbsp;
+          Tracks stream at 320 kbps
+        </li>
+        <li>
+          {{< partial "check.html" >}}&nbsp;
+          Upload 5 GB of music per week
+        </li>
+        <li>
+          {{< partial "check.html" >}}&nbsp;
+          Private <a href="https://discord.io/choraleapp">chat</a>, best-effort support
+        </li>
+        <li>
+          {{< partial "check.html" >}}&nbsp;
+          Listen without connection
+        </li>
+        <li>
+          {{< partial "check.html" >}}&nbsp;
+          All settings unlocked
+        </li>
+        <li>
+          {{< partial "cross.html" >}}&nbsp;
+          No visualizer <a href="https://www.google.com/search?q=linear%20music%20visualizer%20images">[?]</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+
+    <!---->
+
+    <div class="col">
+    <figure class="pricing-card pricing-card--secondary">
+      <div class="pricing-card__header">
+        <div class="break break-sm"></div>
+        <small class="caps"><b>Chorale Unlimited Pass</b></small>
+        <div class="break break-sm"></div>
+
+        <h2 class="h1">
+          <strong><sup class="pricing__third-plan-currency">€</sup><span class="pricing__third-plan-cost">12</span></strong><small>/mo</small>
+        </h2>
+        <p>The extreme plan with lossless playback, no ads, and special features.</p>
+      </div>
+      <div class="pricing-card__btn-cover">
+        <a href="/early-access" class="btn btn--block btn--bladark btn--rough">Get free beta access</a>
+      </div>
+    </figure>
+    <div class="container">
+      <div class="break-sm"></div>
+      <p><b>Unlimited Pass includes:</b></p>
+      <ul class="no-bullet">
+        <li>
+          {{< partial "check.html" >}}&nbsp;
+          No ads whatsoever
+        </li>
+        <li>
+          {{< partial "check.html" >}}&nbsp;
+          Lossless (WAV/FLAC) sound
+        </li>
+        <li>
+          {{< partial "check.html" >}}&nbsp;
+          No music uploading limit*
+        </li>
+        <li>
+          {{< partial "check.html" >}}&nbsp;
+          Private <a href="https://discord.io/choraleapp">chat</a>, prioritized support
+        </li>
+        <li>
+          {{< partial "check.html" >}}&nbsp;
+          Listen without connection
+        </li>
+        <li>
+          {{< partial "check.html" >}}&nbsp;
+          All settings unlocked
+        </li>
+        <li>
+          {{< partial "check.html" >}}&nbsp;
+          Access to visualizer <em>(beta)</em> <a href="https://www.google.com/search?q=linear%20music%20visualizer%20images">[?]</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+  <div class="break"></div>
+  <small class="faded">
+    <p>*Regarding unlimited uploading, misusing the unlimited
+    uploads feature will get your account frozen. Ask support for more information.</p>
+    <p>**You can request a refund within a 14 day period if you have not streamed a
+    song as per the European Cooling Off period.</p>
+  </small>
+  <div class="break"></div>
+</main>
+
+
+<style>
+@media (min-width: 768px) {
+  .col { width: 34%; }
+}
+</style>
+
+
+<script defer>
+function changeTimeframe() {
+  if (document.querySelector('.pricing__timeframe').innerHTML === 'monthly') {
+    // Set as annual
+    document.querySelector('.pricing__timeframe').innerHTML = 'annual';
+
+    // Refresh price
+    if (document.querySelector('.pricing__currency-changer-button').innerHTML === 'EUR') {
+      backToEuros();
+    } else {
+      changeCurrency(
+        document.querySelector('.pricing__currency-changer-button').innerHTML
+      );
+    }
+  } else {
+    // Set monthly
+    document.querySelector('.pricing__timeframe').innerHTML = 'monthly';
+
+    // Refresh price
+    if (document.querySelector('.pricing__currency-changer-button').innerHTML === 'EUR') {
+      backToEuros();
+    } else {
+      changeCurrency(
+        document.querySelector('.pricing__currency-changer-button').innerHTML
+      );
+    }
+  }
+}
+
+window.onload = function() {
+
+  fetch('https://api.fixer.io/latest')
+    .then(
+      function(response) {
+        if (response.status !== 200) {
+          document.querySelector('.pricing__details--wait').setAttribute('hidden', 'hidden');
+          document.querySelector('.pricing__details--failed').removeAttribute('hidden');
+          return;
+        }
+
+        // Examine the text in the response
+        response.json().then(function(data) {
+          var currencyRates = data.rates;
+          console.log(currencyRates);
+
+          document.querySelector('.pricing__details--wait').setAttribute('hidden', 'hidden');
+          document.querySelector('.pricing__details--failed').setAttribute('hidden', 'hidden');
+          document.querySelector('.pricing__details--success').removeAttribute('hidden');
+
+          window.AUDrate = data.rates.AUD;
+          window.BRLrate = data.rates.BRL;
+          window.CADrate = data.rates.CAD;
+          window.CHFrate = data.rates.CHF;
+          window.DKKrate = data.rates.DKK;
+          window.GBPrate = data.rates.GBP;
+          window.IDRrate = data.rates.IDR;
+          window.INRrate = data.rates.INR;
+          window.JPYrate = data.rates.JPY;
+          window.KRWrate = data.rates.KRW;
+          window.MXNrate = data.rates.MXN;
+          window.NOKrate = data.rates.NOK;
+          window.NZDrate = data.rates.NZD;
+          window.PHPrate = data.rates.PHP;
+          window.PLNrate = data.rates.PLN;
+          window.RUBrate = data.rates.RUB;
+          window.SEKrate = data.rates.SEK;
+          window.SGDrate = data.rates.SGD;
+          window.TRYrate = data.rates.TRY;
+          window.USDrate = data.rates.USD;
+          window.ZARrate = data.rates.ZAR;
+        });
+      }
+    )
+    .catch(function(err) {
+      console.log('Could not fetch currency rates', err);
+      document.querySelector('.pricing__details--wait').setAttribute('hidden', 'hidden');
+      document.querySelector('.pricing__details--failed').removeAttribute('hidden');
+    });
+
+}
+
+function roundInt(value, decimals) {
+  return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+}
+
+function changeCurrency(currency) {
+  // Get currency value
+  var newCurrencyRate = this[currency + 'rate'];
+
+  // Calculate price
+  if (document.querySelector('.pricing__timeframe').innerHTML === 'monthly') {
+    var secondPlanPrice = roundInt(4 * newCurrencyRate, 1);
+    var thirdPlanPrice = roundInt(12 * newCurrencyRate, 1);
+  } else {
+    var secondPlanPrice = roundInt((4 * 12) * newCurrencyRate, 1);
+    var thirdPlanPrice = roundInt((12 * 12) * newCurrencyRate, 1);
+  }
+
+  document.querySelector('.pricing__second-plan-cost').innerHTML = secondPlanPrice;
+  document.querySelector('.pricing__third-plan-cost').innerHTML = thirdPlanPrice;
+
+  // Change symbol
+  document.querySelector('.pricing__currency-changer-button').innerHTML = currency;
+  document.querySelector('.pricing__second-plan-currency').innerHTML = currency;
+  document.querySelector('.pricing__third-plan-currency').innerHTML = currency;
+}
+
+function backToEuros() {
+  if (document.querySelector('.pricing__timeframe').innerHTML === 'monthly') {
+    document.querySelector('.pricing__second-plan-cost').innerHTML = '4';
+    document.querySelector('.pricing__third-plan-cost').innerHTML = '12';
+  } else {
+    document.querySelector('.pricing__second-plan-cost').innerHTML = 4 * 12;
+    document.querySelector('.pricing__third-plan-cost').innerHTML = 12 * 12;
+  }
+
+  // Change symbol
+  document.querySelector('.pricing__currency-changer-button').innerHTML = 'EUR';
+  document.querySelector('.pricing__second-plan-currency').innerHTML = '€';
+  document.querySelector('.pricing__third-plan-currency').innerHTML = '€';
+}
+</script>
+
+
+
+
+
+
+<div class="modal micromodal-slide" id="currency-changer" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="currency-changer-title" aria-describedby="currency-changer-content">
+      <div role="document">
+        <header class="modal__header">
+          <h3 class="modal__title" id="currency-changer-title">
+            Change currency
+          </h3>
+          <button class="modal__close" aria-label="Close modal" aria-controls="modal__container1" data-micromodal-close></button>
+        </header>
+        <div class="break-sm"></div>
+
+          <button onclick="backToEuros()" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">EUR</button>
+          <button onclick="changeCurrency('USD')" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">USD</button>
+          <button onclick="changeCurrency('JPY')" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">JPY</button>
+          <button onclick="changeCurrency('GBP')" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">GBP</button>
+          <button onclick="changeCurrency('CHF')" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">CHF</button>
+          <button onclick="changeCurrency('CAD')" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">CAD</button>
+          <button onclick="changeCurrency('AUD')" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">AUD</button>
+          <button onclick="changeCurrency('NZD')" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">NZD</button>
+          <button onclick="changeCurrency('NOK')" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">NOK</button>
+          <button onclick="changeCurrency('SEK')" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">SEK</button>
+          <button onclick="changeCurrency('RUB')" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">RUB</button>
+          <button onclick="changeCurrency('MXN')" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">MXN</button>
+          <button onclick="changeCurrency('BRL')" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">BRL</button>
+          <button onclick="changeCurrency('ZAR')" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">ZAR</button>
+          <button onclick="changeCurrency('SGD')" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">SGD</button>
+          <button onclick="changeCurrency('TRY')" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">TRY</button>
+          <button onclick="changeCurrency('KRW')" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">KRW</button>
+          <button onclick="changeCurrency('INR')" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">INR</button>
+          <button onclick="changeCurrency('IDR')" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">IDR</button>
+          <button onclick="changeCurrency('PHP')" ontouchstart="this.onclick()" data-micromodal-close class="btn btn--border">PHP</button>
+
+      </div>
+    </div>
+  </div>
+</div>

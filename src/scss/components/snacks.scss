@@ -1,0 +1,64 @@
+#snackbar-container {
+  position: fixed;
+  left: 1rem;
+  bottom: 0;
+  z-index: index($layers, modal);
+}
+
+.snackbar {
+  background-color: #424242;
+  color: #fff;
+  border-radius: 0.1rem;
+  height: 0;
+  overflow: hidden;
+  min-width: 18rem;
+  max-width: 36rem;
+  cursor: pointer;
+  opacity: 0;
+  box-shadow: $shadow1;
+  transition: opacity 0.2s;
+  cursor: pointer;
+
+  &.active {
+    height: auto;
+    opacity: 1;
+    margin-bottom: 1rem;
+    height: auto;
+    transition: opacity 0.2s;
+    //animation: faded 0.2s;
+
+    & span {
+      padding: 1rem 1.5rem;
+      display: inline-block;
+    }
+
+    & > a {
+      text-transform: uppercase;
+      line-height: 100%;
+      font-weight: bold;
+      padding: 1rem;
+      float: right;
+      color: $brand-main;
+      position: relative;
+      top: 0.15rem;
+    }
+  }
+}
+
+// Scale nicely on smaller devices
+@media (max-width: 40rem) {
+  #snackbar-container {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  #snackbar-container .snackbar {
+    min-width: 100%;
+  }
+
+  #snackbar-container .snackbar.active {
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+}

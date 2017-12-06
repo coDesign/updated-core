@@ -1,0 +1,72 @@
+.modal[aria-hidden='true'] {
+  display: none;
+}
+
+/**************************\
+  Basic Modal Styles
+\**************************/
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(#000, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal__container {
+  background: #fff;
+  padding: 1rem;
+  max-width: 40rem;
+  max-height: 80vh;
+  border-radius: 0.25rem;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: $brand-main;
+  box-sizing: border-box;
+}
+
+.modal__close {
+  background: transparent;
+  border: 0;
+  font-size: 1.25rem;
+}
+
+.modal__header .modal__close::before { content: "\2715"; }
+
+
+
+/**************************\
+  Demo Animation Style
+\**************************/
+
+.micromodal-slide[aria-hidden="false"] .modal__overlay {
+  animation: faded .125s;
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__container {
+  animation: fadeup .4s;
+}
+
+.micromodal-slide .modal__container,
+.micromodal-slide .modal__overlay {
+  will-change: transform;
+}

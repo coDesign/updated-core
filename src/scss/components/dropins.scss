@@ -1,0 +1,276 @@
+// Horizontal rule with dots
+.fancy {
+  border: 0;
+  margin: 2rem;
+  margin-bottom: 4rem;
+
+  &::after {
+    content: ' · · · ';
+    letter-spacing: 1rem;
+  }
+}
+
+// Small line
+.small-line {
+  height: 0.1rem;
+  width: 3rem;
+  margin: 2rem 0;
+  background: currentColor;
+}
+
+// Prettier underline
+u {
+  text-decoration: none;
+  border-bottom: 0.08rem solid currentColor;
+}
+
+// Cursor change
+.clickable { cursor: pointer; }
+.wait { cursor: wait; }
+
+// No scroll
+.disable-scrolling {
+  overflow: hidden;
+}
+
+// Pretty list
+.styled-list {
+  padding: 0;
+
+  li {
+    list-style: none;
+
+    &::before {
+      content: " · ";
+      font-weight: bold;
+      padding: 0 0.5rem;
+    }
+  }
+}
+
+// Fix container
+.container {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1rem;
+  display: block;
+
+  &--unpadded { padding: 0; }
+  &--narrow { max-width: 42rem; }
+}
+
+.inline { display: inline-block; }
+
+.padded-row .col {
+  padding: 1rem;
+}
+
+.text-row .col { padding: 0 0.4rem; }
+
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.stretch-img {
+  width: 100%;
+  height: auto;
+}
+
+// Reset
+.no-bullet {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.horizontal-list li {
+  display: inline-block;
+}
+
+.horizontal-list--padded li { padding-right: 1.8rem; }
+
+.half-list li {
+  display: inline-block;
+  width: 48%;
+}
+
+.float-right { float: right; }
+.float-fix { position: relative; top: -3.5rem; }
+
+// Text
+.silent {
+  color: #fff;
+  &:hover { color: $brand-main; }
+}
+
+.white { color: #fff; svg path { fill: #fff; } }
+
+.closer {
+  letter-spacing: -0.125rem;
+}
+.bold { color: $bold-text-color; }
+.highlighted {
+  color: $brand-main;
+
+  svg path { fill: $brand-main; }
+}
+.center { text-align: center; }
+.right { text-align: right; }
+
+.faded { opacity: 0.8; }
+.ingrained { opacity: 0.6; }
+.buried { opacity: 0.4; }
+.caps { text-transform: uppercase; }
+.no-upper-margin { margin-top: 0; }
+
+.truncate { max-width: 42rem; }
+
+// Align
+.break { padding: 1.5rem; }
+.break-sm { padding: 0.5rem; }
+
+.btn-group .btn { margin: 0.25rem; }
+
+// Icons
+.small-icon { height: 1.5rem; width: 1.5rem; }
+.med-icon { height: 2rem; width: 2rem; }
+.large-icon { height: 3rem; width: 3rem; }
+
+// On mobile
+@media (max-width: 768px) {
+  .center-mobile { text-align: center; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Homepage
+ */
+
+.hero {
+  height: 100vh;
+  background-size: cover;
+  color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100vw;
+  background-color: #1b1b1b;
+
+  // when using poly masks, padding gets messed up
+  &--cut-fix {
+    padding-bottom: 8rem;
+  }
+
+  .btn--border {
+    color: #fff;
+
+    &:hover { color: #d5d5d5; }
+  }
+
+  &--light {
+    color: #000;
+
+    a { color: #000; }
+
+    .btn--primary {
+      background: #000;
+      color: #fff;
+
+      &:hover { background: #292929; }
+    }
+
+    .btn { color: #fff; }
+
+    .btn--border {
+      color: #000;
+
+      &:hover { color: #292929; }
+    }
+  }
+
+  &--transparent { background-color: transparent; }
+  &--branded { background-image: linear-gradient(90deg, $brand-secondary, $brand-main); }
+}
+
+// Make sure container fits on screen
+@media (max-width: 640px) {
+  .hero__container {
+    max-width: 80%;
+  }
+}
+
+@media (max-height: 768px) {
+  .hero {
+    padding: 3.5rem 1rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (max-height: 600px) {
+  .hero__container {
+    max-width: 90%;
+  }
+  .hero .h1 { font-size: 1.8rem; }
+  .btn { padding: 0.4rem 0.6rem; }
+}
+
+@media (max-height: 480px) {
+  .hero__container {
+    max-width: 90%;
+  }
+  .btn { padding: 0.2rem 0.6rem; }
+}
+
+.center .text-input {
+  margin: 0.8rem auto;
+}
+
+.text-input {
+  padding: 1rem;
+  border: 0.1rem solid rgba(#000, 0.125);
+  display: block;
+  margin: 0.8rem;
+
+  &--long { min-width: 30rem; }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .mobile-row figure, .mobile-row .col {
+    margin-bottom: 2.5rem;
+  }
+
+  .large-vw-only { display: none; }
+}
+
+@media (min-width: 768px) {
+  .small-vw-only { display: none; }
+}

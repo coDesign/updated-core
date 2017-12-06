@@ -1,0 +1,241 @@
+/*! stableset.css v1.0 | MIT | github.com/mistermantas/stableset */
+
+html {
+  /* Correct the line height in all browsers */
+  line-height: 1;
+  /* Prevent adjustments of font size after orientation changes in
+        IE on Windows Phone and in iOS */
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  /* Set a consistent font size */
+  font-size: 100%;
+  /* Apply natural box layout model */
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  /* Apply natural box layout model */
+  box-sizing: inherit;
+}
+
+body {
+  /* Reset body margin to blank state */
+  margin: 0;
+}
+
+a {
+  /* Remove `a` text underline */
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /* Correct values across Chrome, Firefox, Safari,
+     and reset them for free use with classes instead */
+  font-size: 100%;
+  margin: 0;
+}
+
+figcaption, figure, main {
+  /* Add the correct display in IE */
+  display: block;
+}
+
+figure {
+  /* Remove inconsistent margin */
+  margin: 0;
+}
+
+hr {
+  /* Add the correct box sizing in Firefox */
+  box-sizing: inherit;
+  height: 0;
+  /* Show the overflow in Edge and IE */
+  overflow: visible; /* 2 */
+}
+
+pre {
+  /* Correct the inheritance and scaling of font size in all browsers */
+  font-family: 'Roboto Mono', 'Consolas', monospace, monospace;
+  /* Correct the odd `em` font sizing in all browsers */
+  font-size: 1em;
+}
+
+a {
+  /* Remove gaps in links underline in iOS 8+ and Safari 8+ */
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  /* Remove the bottom border in Chrome 57- and Firefox 39- */
+  border-bottom: none;
+  /* Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari */
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  /* Add the correct font weight in Chrome, Edge, and Safari */
+  font-weight: 700;
+}
+
+details, menu {
+  /* Add the correct display in all browsers */
+  display: block;
+}
+
+summary {
+  /* Add the correct display in all browsers */
+  display: list-item;
+}
+
+template {
+  /* Add the correct display in all browsers */
+  display: none;
+}
+
+::-webkit-file-upload-button {
+  /* Show correct font and correct the inability to style clickable types in Safari */
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  /* Correct the cursor style of increment and decrement buttons in Chrome */
+  height: auto;
+}
+
+[type="search"] {
+  /* Correct the odd appearance in Chrome and Safari */
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  /* Remove the inner padding and cancel buttons in Chrome and Safari on macOS */
+  -webkit-appearance: none;
+}
+
+textarea {
+  /* Remove the default vertical scrollbar in IE */
+  overflow: auto;
+}
+
+code, kbd, samp {
+  /* Correct the inheritance and scaling of font size in all browsers */
+  font-family: 'Roboto Mono', 'Consolas', monospace, monospace;
+  /* Correct the odd `em` font sizing in all browsers */
+  font-size: 1em;
+}
+
+dfn {
+  /* Add the correct font style in Android 4.3- */
+  font-style: italic;
+}
+
+small {
+  /* Add the correct font size in all browsers for `small` */
+  font-size: 80%;
+}
+
+sub, sup {
+  /* Prevent `sub` and `sup` elements from affecting the line height */
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio, video {
+  /* Add the correct display in IE 9- & OS 4-7 */
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+svg:not(:root) {
+  /* Hide the overflow in IE */
+  overflow: hidden;
+}
+
+progress {
+  /* Add the correct vertical alignment in Chrome, Firefox, and Opera */
+  vertical-align: baseline;
+}
+
+button, input {
+  /* Show the overflow in IE/Edge */
+  overflow: visible;
+}
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+  /* Prevent WebKit bugs */
+  -webkit-appearance: button;
+}
+
+button, select {
+  /* Remove the inheritance of text transform  */
+  text-transform: none;
+}
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  /* Remove the inner border and padding in Firefox */
+  border-style: none;
+  padding: 0;
+}
+
+fieldset {
+  /* Correct the padding in Firefox */
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  /* Correct the text wrapping in Edge and IE */
+  box-sizing: border-box;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+  /* Correct the color inheritance from `fieldset` elements in IE */
+  color: inherit;
+  /* Remove padding for consistent `fieldset` behavior */
+  padding: 0;
+}
+
+button, input, optgroup, select, textarea {
+  /* Force font */
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  /* Remove the margin in Firefox and Safari */
+  margin: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  /* Restore the focus styles unset by the previous rule */
+  outline: 1px dotted ButtonText;
+}
+
+
+/**
+ * Reset
+ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}

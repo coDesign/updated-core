@@ -1,0 +1,52 @@
+<div class="break-sm"></div>
+<h2 class="h5 bold"><b>Experience</b></h2>
+<ul class="no-bullet">
+  <li><a href="/support/experience/early-access">Early Access Program</a></li>
+</ul>
+
+<div class="break-sm"></div>
+<h2 class="h5 bold"><b>Troubleshooting</b></h2>
+<ul class="no-bullet">
+  <li><a href="/support/troubleshooting/app-fails-to-start">App fails to start</a></li>
+  <li><a href="/support/troubleshooting/cannot-listen-to-music">Can’t listen to music</a></li>
+  <li><a href="/support/troubleshooting/no-sound">Progressing with no sound</a></li>
+</ul>
+
+<div class="break-sm"></div>
+<h2 class="h5 bold"><b>For advanced users</b></h2>
+<ul class="no-bullet">
+  <li><a href="/support/advanced/open-source">What open source is</a></li>
+  <li><a href="/contribute">How and why to contributing</a></li>
+  <li><a href="https://apidocs.choraleapp.com">
+    API documentation
+    <svg viewBox="0 0 24 24">
+      <path fill="#fff" d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+    </svg>
+  </a></li>
+</ul>
+
+<div class="break"></div>
+<hr>
+<div class="break-sm"></div>
+<p class="faded">Get a superior experience. Upgrade to a paid plan &amp; support
+Chorale!<br><a href="/pricing" class="caps"><u><b>Get the Pass</b></u></a></p>
+<div class="break-sm"></div>
+<p class="faded">Still not getting the answer you want? How about you ask the
+community for some help! If you turn up with nothing, you can always give us a
+ping, too!<br><a href="/contact" class="caps"><u><b>Talk to a human</b></u></a></p>
+
+
+<script>
+var url = "http://example.com/products.html".split("/"); //replace string with location.href
+var navLinks = document.querySelector(".help-sidebar").getElementsByTagName("a");
+//naturally you could use something other than the <nav> element
+var i=0;
+var currentPage = url[url.length - 1];
+for(i;i<navLinks.length;i++){
+  var lb = navLinks[i].href.split("/");
+  if(lb[lb.length-1] == currentPage) {
+   navLinks[i].className = "current";
+
+  }
+  }
+</script>

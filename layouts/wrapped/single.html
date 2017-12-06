@@ -1,0 +1,22 @@
+{{ partial "meta.html" . }}
+<body class="default">
+{{ partial "nav.html" . }}
+<header class="highlighted-bg">
+  <div class="break"></div><div class="break"></div>
+  <div class="container container--narrow center bold">
+    <small class="caps ingrained"><b>{{ if .Params.marker }}{{ .Params.marker }}{{ end }}</b></small>
+    <h1 class="h0"><b>{{ .Title }}</b></h1>
+    <p>{{ .Description }}</p>
+  </div>
+  <div class="break"></div>
+</header>
+<section>
+  <div class="break"></div>
+  <div class="break"></div>
+  <div class="container container--narrow markdown-container">
+    {{ .Content }}
+  </div>
+  <div class="break"></div>
+  <div class="break"></div>
+</section>
+{{ partial "footer.html" . }}

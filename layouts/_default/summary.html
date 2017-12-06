@@ -1,0 +1,20 @@
+<article class="small-article">
+  <a href="{{ .Permalink }}">
+    <div class="background" style="background-image: url({{ .Params.image }})"></div>
+
+    <div class="break-sm"></div>
+
+    <small class="caps ingrained"><b>{{ .Date.Format "January 2, 2006" }} &nbsp; &middot; &nbsp; {{ .ReadingTime }} min read</b></small>
+    <h1 class="h2"><b>
+      <a href="{{ .Permalink }}" class="bold">{{ .Title }}</a>
+    </b></h1>
+
+    <p>{{ .Params.description }}</p>
+
+    <a href="{{ .Permalink }}" class="highlighted"><b>Read more</b>
+      <svg viewBox="0 0 24 24">
+        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+      </svg>
+    </a>
+  </a>
+</article>

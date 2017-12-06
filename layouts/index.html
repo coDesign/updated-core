@@ -1,0 +1,255 @@
+{{ partial "meta.html" . }}
+<body class="index">
+{{ partial "nav.html" . }}
+<main class="hero center-mobile">
+  <div class="container"><div class="row padded-row">
+    <div class="col flex-align">
+      <h1 class="h0">
+        <b>Chorale is the free nex-gen music &amp; podcast app for all.</b>
+      </h1>
+      <p>Spotify, Google, and SoundCloud don’t listen to you. But we do. Chorale
+         is the first-ever music streaming platform that caters to users.
+         It’s made for everyone, by everyone.</p>
+
+      <div class="break-sm"></div>
+      <div class="btn-group">
+        <a href="/early-access" class="btn btn--black">Join early access</a>
+        <a href="#comparison" class="btn btn--bladark">Prove it to me</a>
+      </div>
+    </div>
+    <div class="col">
+      <img src="/img/chaos.jpg" class="stretch-img">
+    </div>
+  </div></div>
+</main>
+
+
+
+<section id="comparison">
+  <div class="container container--narrow">
+    <div class="break"></div><div class="break"></div>
+    <h2 class="h1 bold center"><b>Chorale kills the competition. Here, we can prove it to you.</b></h1>
+    <p class="bold center">Compare features between Chorale and other apps. You can click on the cross or checkmark for more information, in case you feel we are wrong on some subject. And, if we made a mistake somewhere, please do not be shy and <a href="/contact">contact us</a>!</p>
+
+    <p class="center ingrained">Results last updated September 25, 2017.</p>
+  </div>
+  <div class="container">
+    <div class="break"></div>
+
+    <table class="comparison-table">
+      <tr>
+        <!-- Services -->
+        <th></th>
+        <th class="chorale">
+          <img data-src="/logo/logo.svg" alt="Chorale">
+        </th>
+        <th>
+          <a class="faded" href="https://www.spotify.com">
+            <img data-src="/competitors/sp.svg" alt="Spotify">
+          </a>
+        </th>
+        <th>
+          <a class="faded" href="https://music.google.com">
+            <img data-src="/competitors/gpm.png" style="transform: scale(1.15)" alt="Google Play Music">
+          </a>
+        </th>
+        <th>
+          <a class="faded" href="https://www.youtube.com">
+            <img data-src="/competitors/yt.svg" alt="YouTube">
+          </a>
+        </th>
+        <th>
+          <a class="faded" href="https://soundcloud.com">
+            <img data-src="/competitors/sc.svg" style="transform: scale(1.4)" alt="SoundCloud">
+          </a>
+        </th>
+        <th>
+          <a class="faded" href="https://www.apple.com/apple-music">
+            <img data-src="/competitors/am.svg" alt="Apple Music">
+          </a>
+        </th>
+      </tr>
+      <tr>
+        <td class="feature"><span class="bold">Upload own music</span></td>
+        <td class="chorale highlighted">{{ partial "check.html" . }}</td>
+        <td class="buried"><!-- Spotify     -->   {{ partial "cross.html" . }}</td>
+        <td><!-- Google Play -->   {{ partial "check.html" . }}</td>
+        <td class="buried"><!-- YouTube     -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- SoundCloud  -->   {{ partial "cross.html" . }}</td>
+        <td><!-- Apple Music -->   {{ partial "check.html" . }}</td>
+      </tr>
+      <tr>
+        <td class="feature"><span class="bold">Highest available<br>streaming quality</span></td>
+        <td class="chorale highlighted"><strong>lossless</strong><br>~1441 kbps</td>
+        <td><!-- Spotify     -->   <span>320 kbps<br> OGG</span></td>
+        <td><!-- Google Play -->   <span>320 kbps<br> MP3</span></td>
+        <td><!-- YouTube     -->   <spam>320 kbps<br> MP4</span></td>
+        <td><!-- SoundCloud  -->   <span>128 kbps<br> MP3</span></td>
+        <td><!-- Apple Music -->   <span>256 kbps<br> AAC</span></td>
+      </tr>
+      <tr>
+        <td class="feature"><span class="bold">Remote control</span></td>
+        <td class="chorale">       {{ partial "check.html" . }}</td>
+        <td><!-- Spotify     -->   {{ partial "check.html" . }}</td>
+        <td><!-- Google Play -->   Only on<br> Chromecast</td>
+        <td><!-- YouTube     -->   Supported TVs,<br> Chromecast</td>
+        <td class="buried"><!-- SoundCloud  -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- Apple Music -->   {{ partial "cross.html" . }}</td>
+      </tr>
+      <tr>
+        <td class="feature"><span class="bold">Block songs or<br>artists you hate</span></td>
+        <td class="chorale">       {{ partial "check.html" . }}</td>
+        <td><!-- Spotify     -->   Only on<br> Daily Mix</td>
+        <td class="buried"><!-- Google Play -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- YouTube     -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- SoundCloud  -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- Apple Music -->   {{ partial "cross.html" . }}</td>
+      </tr>
+      <tr>
+        <td class="feature"><span class="bold">Listen to fan-made<br>mixes and remixes</span></td>
+        <td class="chorale">       {{ partial "check.html" . }}</td>
+        <td><!-- Spotify     -->   US only</td>
+        <td class="buried"><!-- Google Play -->   {{ partial "cross.html" . }}</td>
+        <td><!-- YouTube     -->   {{ partial "check.html" . }}</td>
+        <td><!-- SoundCloud  -->   {{ partial "check.html" . }}</td>
+        <td class="buried"><!-- Apple Music -->   {{ partial "cross.html" . }}</td>
+      </tr>
+      <tr>
+        <td class="feature"><span class="bold">Podcasts, live streams</span></td>
+        <td class="chorale">       {{ partial "check.html" . }}</td>
+        <td><!-- Spotify     -->   {{ partial "check.html" . }}</td>
+        <td><!-- Google Play -->   In US &amp; CA</td>
+        <td><!-- YouTube     -->   {{ partial "check.html" . }}</td>
+        <td><!-- SoundCloud  -->   {{ partial "check.html" . }}</td>
+        <td class="buried"><!-- Apple Music -->   {{ partial "cross.html" . }}</td>
+      </tr>
+      <tr>
+        <td class="feature"><span class="bold">Dedicated mix and<br>podcast UI</span></td>
+        <td class="chorale">       {{ partial "check.html" . }}</td>
+        <td class="buried"><!-- Spotify     -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- Google Play -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- YouTube     -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- SoundCloud  -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- Apple Music -->   {{ partial "cross.html" . }}</td>
+      </tr><tr>
+        <td class="feature"><span class="bold">Use adaptive colors<br>(from covers)</span></td>
+        <td class="chorale">       {{ partial "check.html" . }}</td>
+        <td class=""><!--  Spotify          -->   Partially<br>on mobile</td>
+        <td class="buried"><!-- Google Play  -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- YouTube      -->   {{ partial "cross.html" . }}</td>
+        <td class=""><!--  SoundCloud        -->   Partially<br>on web app</td>
+        <td class="buried"><!-- Apple Music  -->   {{ partial "cross.html" . }}</td>
+      </tr>
+      <tr>
+        <td class="feature"><span class="bold">Change app look<br>to fit your needs</span></td>
+        <td class="chorale">       {{ partial "check.html" . }}</td>
+        <td class="buried"><!-- Spotify     -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- Google Play -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- YouTube     -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- SoundCloud  -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- Apple Music -->   {{ partial "cross.html" . }}</td>
+      </tr>
+      <tr>
+        <td class="feature"><span class="bold">Desktop apps</span></td>
+        <td class="chorale">       {{ partial "check.html" . }}</td>
+        <td><!-- Spotify     -->   {{ partial "check.html" . }}</td>
+        <td class="buried"><!-- Google Play -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- YouTube     -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- SoundCloud  -->   {{ partial "cross.html" . }}</td>
+        <td><!-- Apple Music -->   {{ partial "check.html" . }}</td>
+      </tr>
+      <tr>
+        <td class="feature"><span class="bold">View previous<br>queue tracks</span></td>
+        <td class="chorale">       {{ partial "check.html" . }}</td>
+        <td class="buried"><!-- Spotify     -->   {{ partial "cross.html" . }}</td>
+        <td><!-- Google Play -->   {{ partial "check.html" . }}</td>
+        <td><!-- YouTube     -->   {{ partial "check.html" . }}</td>
+        <td><!-- SoundCloud  -->   {{ partial "check.html" . }}</td>
+        <td class="buried"><!-- Apple Music -->   {{ partial "cross.html" . }}</td>
+      </tr>
+      <tr>
+        <td class="feature"><span class="bold">Ergonomic mobile apps<br>for use with 1 hand</span></td>
+        <td class="chorale">       {{ partial "check.html" . }}</td>
+        <td class="buried"><!-- Spotify     -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- Google Play -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- YouTube     -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- SoundCloud  -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- Apple Music -->   {{ partial "cross.html" . }}</td>
+      </tr>
+      <tr>
+        <td class="feature"><span class="bold">Screen real-estate<br>preservant apps</span></td>
+        <td class="chorale">       {{ partial "check.html" . }}</td>
+        <td class="buried"><!-- Spotify     -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- Google Play -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- YouTube     -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- SoundCloud  -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- Apple Music -->   {{ partial "cross.html" . }}</td>
+      </tr>
+      <tr>
+        <td class="feature"><span class="bold">Listens to feedback</span></td>
+        <td class="chorale">       {{ partial "check.html" . }}</td>
+        <td class="buried"><!-- Spotify     -->   <a href="https://mastodon.xyz/@mistermantas/6982087">{{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- Google Play -->   <a href="https://www.reddit.com/r/Android/comments/5cuwt4/introducing_the_new_google_play_music/">
+          {{ partial "cross.html" . }}
+        </a></td>
+        <td class="buried"><!-- YouTube     -->   <a href="https://productforums.google.com/forum/#!topicsearchin/youtube/listen$20to$20feedback">
+          {{ partial "cross.html" . }}
+        </a></td>
+        <td class="buried"><!-- SoundCloud  -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- Apple Music -->   {{ partial "cross.html" . }}</td>
+      </tr>
+      <tr>
+        <td class="feature"><span class="bold">Humane support</span></td>
+        <td class="chorale">       {{ partial "check.html" . }}</td>
+        <td><!-- Spotify     -->   {{ partial "check.html" . }}</td>
+        <td class="buried"><!-- Google Play -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- YouTube     -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- SoundCloud  -->   {{ partial "cross.html" . }}</td>
+        <td><!-- Apple Music -->   {{ partial "check.html" . }}</td>
+      </tr>
+      <tr>
+        <td class="feature"><span class="bold">Transparent<br>changelogs</span></td>
+        <td class="chorale">       {{ partial "check.html" . }}</td>
+        <td class="buried"><!-- Spotify     -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- Google Play -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- YouTube     -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- SoundCloud  -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- Apple Music -->   {{ partial "cross.html" . }}</td>
+      </tr>
+      <tr>
+        <td class="feature"><span class="bold">Open source</span></td>
+        <td class="chorale">       {{ partial "check.html" . }}</td>
+        <td class="buried"><!-- Spotify     -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- Google Play -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- YouTube     -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- SoundCloud  -->   {{ partial "cross.html" . }}</td>
+        <td class="buried"><!-- Apple Music -->   {{ partial "cross.html" . }}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="break"></div><div class="break"></div>
+</section>
+
+<section id="" class="container">
+  <div class="row padded-row">
+    <figure class="col flex-align">
+      <img data-src="/img/hiapp.png" class="tour__laptop stretch-img">
+    </figure>
+    <figure class="col flex-align">
+      <h2 class="h0 bold"><b>You’re probably in disbelief.</b></h2>
+      <p>Hopefully we’ve made our point clear. Chorale is here to win you over.
+      So, if you’re a listener, <a href="/early-access"><u>sign up and get
+      Chorale early</u></a>! Artists, we haven’t forgotten about you either!
+      You can <a href="/creators"><u>learn more on the Creator Center</u></a>.
+      Last off, if you have any questions, hit that bubble at the bottom right
+      of your screen and we’ll get back to you ASAP. (In case we’re not available,
+      leave your email and expect a reply in a day.)</p>
+    </figure>
+  </div>
+
+  <div class="break"></div><div class="break"></div>
+</section>
+
+<!-- Content -->
+{{ partial "footer.html" . }}
