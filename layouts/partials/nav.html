@@ -1,14 +1,17 @@
 <nav class="nav-bar">
   <div class="container">
-    <ul class="nav-bar__list">
-      <li class="nav-bar__logo">
-        <a href="https://thecodesign.io">
+    <div class="row">
+      <div class="col">
+        <a class="nav-bar__logo" href="https://thecodesign.io">
           <img src="/logo/logo-black-svg.svg">
         </a>
-      </li>
-
-      {{ partial "nav-items.html" . }}
-    </ul>
+      </div>
+      <div class="col">
+        <ul class="nav-bar__list">
+          {{ partial "nav-items.html" . }}
+        </ul>
+      </div>
+    </div>
   </div>
 </nav>
 
