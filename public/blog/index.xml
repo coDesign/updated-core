@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Chorale Music</title>
+    <link>https://thecodesign.io/blog/</link>
+    <description>Recent content in Blog on Chorale Music</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 21 Oct 2017 00:00:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://thecodesign.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The reason you&#39;re here</title>
+      <link>https://thecodesign.io/blog/introduction/</link>
+      <pubDate>Sat, 21 Oct 2017 00:00:00 +0530</pubDate>
+      
+      <guid>https://thecodesign.io/blog/introduction/</guid>
+      <description>I am a code+design enthusiast; and I’m sure since you’re reading this, you’re one as well. I’m an avid reader as well, and for obvious reasons, I’m going to go ahead and assume you’re one too.
+I’ve been reading articles on the internet for a decade now, and I know the annoyance one feels when the article they’re presented with, is just a place-holder with more than 70% of padding. The noise- is too much; is increasing.</description>
+    </item>
+    
+  </channel>
+</rss>

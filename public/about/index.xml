@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Chorale Music</title>
+    <link>https://thecodesign.io/about/</link>
+    <description>Recent content in About on Chorale Music</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="https://thecodesign.io/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About us, our product and our community.</title>
+      <link>https://thecodesign.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://thecodesign.io/about/</guid>
+      <description>About Us, our product and our community.  Separating the signal from the noise, we curate only the most qualitative and the most relavant code+design content. A fresh, noise-free podcast every Wednesday and a Newsletter every Sunday.
+ Take me to the curation Tell me more       &#34;coDesign&#34; has the features you want.   Ditch all the noise Focus on the content that matters.</description>
+    </item>
+    
+  </channel>
+</rss>
