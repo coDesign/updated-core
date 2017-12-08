@@ -28,6 +28,7 @@
     <meta name="description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <meta name="canonical" content="{{ .Permalink }}">
     <meta name="theme-color" content="#{{ if .Params.color }}{{ .Params.color }}{{ else }}{{ if eq .Title .Site.Title }}dedede{{ else }}dedede{{ end }}{{ end }}">
+    <meta name="msapplication-notification" content="frequency=30;polling-uri=http://notifications.buildmypinnedsite.com/?feed={{ .RSSLink }}&amp;id=1;polling-uri2=http://notifications.buildmypinnedsite.com/?feed={{ .RSSLink }}&amp;id=2;polling-uri3=http://notifications.buildmypinnedsite.com/?feed={{ .RSSLink }}&amp;id=3;polling-uri4=http://notifications.buildmypinnedsite.com/?feed={{ .RSSLink }}&amp;id=4;polling-uri5=http://notifications.buildmypinnedsite.com/?feed={{ .RSSLink }}&amp;id=5; cycle=1"/>
 
     <!-- RSS -->
     {{ if .RSSLink }}
