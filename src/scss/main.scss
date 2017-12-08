@@ -307,7 +307,7 @@
     .nav-bar__list--last-item { margin-right: auto; }
   }
 
-  // Try Chorale link padding fix
+  // Try coDesign link padding fix
   li.nav-bar__cta { padding-right: 0; }
 }
 
@@ -565,7 +565,7 @@
       width: auto;
     }
 
-    &.chorale {
+    &.coDesign {
       padding-top: 1.5rem;
     }
   }
@@ -584,8 +584,8 @@
     border-top: 0.1rem solid $border-color;
   }
 
-  // Give Chorale focus
-  td.chorale {
+  // Give coDesign focus
+  td.coDesign {
     border-color: $brand-main;
     border-left: 0.1rem solid $brand-main;
     border-right: 0.1rem solid $brand-main;
@@ -594,7 +594,7 @@
     svg path { fill: $brand-main; }
   }
 
-  th.chorale {
+  th.coDesign {
     border-left: 0.1rem solid $brand-main;
     border-right: 0.1rem solid $brand-main;
     border-top-color: $brand-main;

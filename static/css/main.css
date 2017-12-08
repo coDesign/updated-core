@@ -1082,7 +1082,7 @@ u {
     .comparison-table th img {
       height: 1.4rem;
       width: auto; }
-    .comparison-table th.chorale {
+    .comparison-table th.coDesign {
       padding-top: 1.5rem; }
   .comparison-table .feature {
     padding: 0.8rem;
@@ -1092,19 +1092,19 @@ u {
   .comparison-table td {
     border-bottom: 0.1rem solid #dedede;
     border-top: 0.1rem solid #dedede; }
-  .comparison-table td.chorale {
+  .comparison-table td.coDesign {
     border-color: #292929;
     border-left: 0.1rem solid #292929;
     border-right: 0.1rem solid #292929;
     padding: 0.25rem 1.25rem; }
-    .comparison-table td.chorale svg path {
+    .comparison-table td.coDesign svg path {
       fill: #292929; }
-  .comparison-table th.chorale {
+  .comparison-table th.coDesign {
     border-left: 0.1rem solid #292929;
     border-right: 0.1rem solid #292929;
     border-top-color: #292929;
     background: #292929; }
-    .comparison-table th.chorale.last {
+    .comparison-table th.coDesign.last {
       border-bottom: 0.1rem solid #292929; }
 
 .small-article {

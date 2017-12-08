@@ -3,7 +3,7 @@
 [Join Telegram](https://t.me/thecodesignpub) | 
 [Follow us on Twitter](https://twitter.com/thecodesignpub)
 
-Everything housed here comes together to form [thecodesign.io](https://thecodesign.io). The entire product is built using [Hugo](https://gohugo.io), a static site generator in Go, with the SCSS and JS resources being piped through Gulp for optimisations. The end result is constructed and hosted on [Netlify](https://www.netlify.com/?ref=choraleappdotcomgithub).
+Everything housed here comes together to form [thecodesign.io](https://thecodesign.io). The entire product is built using [Hugo](https://gohugo.io), a static site generator in Go, with the SCSS and JS resources being piped through Gulp for optimisations. The end result is constructed and hosted on [Netlify](https://www.netlify.com/).
 
 ## Browser support
 
@@ -14,7 +14,7 @@ Right now we support the latest versions of these browsers:
 + Firefox
 + Safari
 
-This is not to say that the Chorale site cannot be used in browsers older than those reflected, but merely that our focus will be on ensuring everything works great on just those.
+This is not to say that the coDesign site cannot be used in browsers older than those reflected, but merely that our focus will be on ensuring everything works great on just those.
 
 ## Development
 
