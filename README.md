@@ -1,7 +1,7 @@
 # The coDesign Publication
 
-[![Join Telegram](https://t.me/thecodesignpub)
-[![Follow us on Twitter(https://img.shields.io/twitter/follow/choraleapp.svg?style=social&label=follow)](https://twitter.com/thecodesignpub)
+[Join Telegram](https://t.me/thecodesignpub)
+[Follow us on Twitter](https://twitter.com/thecodesignpub)
 
 Everything housed here comes together to form [thecodesign.io](https://thecodesign.io). The entire product is built using [Hugo](https://gohugo.io), a static site generator in Go, with the SCSS and JS resources being piped through Gulp for optimisations. The end result is constructed and hosted on [Netlify](https://www.netlify.com/?ref=choraleappdotcomgithub).
 
