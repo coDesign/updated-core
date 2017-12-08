@@ -6,63 +6,10 @@
     <description>Recent content on Chorale Music</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Oct 2017 00:00:00 +0530</lastBuildDate>
     
 	<atom:link href="https://thecodesign.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>What is open source?</title>
-      <link>https://thecodesign.io/support/advanced/open-source/</link>
-      <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://thecodesign.io/support/advanced/open-source/</guid>
-      <description>We once received a message from a visitor saying that they’d like to manually compile and use the open source code that powers Chorale to avoid any charges. After all, most people aren’t really sure on what “open source” actually means for them.
-Pretty much every part of Chorale is open source: the main website, the web-powered desktop client, the mobile progressive app, the API, even these docs are open source!</description>
-    </item>
-    
-    <item>
-      <title>App fails to start</title>
-      <link>https://thecodesign.io/support/troubleshooting/app-fails-to-start/</link>
-      <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://thecodesign.io/support/troubleshooting/app-fails-to-start/</guid>
-      <description>If your app cannot seem to get past the loading screen, there are a few steps you can take to make sure the problem is on our side or yours. So first, make sure that the problem is not caused by you by following these steps carefully:
-These troubleshooting steps only apply to our web-based apps.  No internet Check if you have an internet connection. Visit at least 10 websites (ranging in popularity) from the machine you are using to make sure other sites are display properly.</description>
-    </item>
-    
-    <item>
-      <title>Can’t listen to music</title>
-      <link>https://thecodesign.io/support/troubleshooting/cannot-listen-to-music/</link>
-      <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://thecodesign.io/support/troubleshooting/cannot-listen-to-music/</guid>
-      <description>Pressed play but cannot seem to get music to play? Check out the following solutions.
-You’re using the wrong account Different accounts get different access to features and music selection.
-The content has been set to release worldwide gradually For example, Australian fans get newly released music at midnight in their timezone, but listeners from the United States have to wait until it’s midnight for them to listen to the content.</description>
-    </item>
-    
-    <item>
-      <title>How does Chorale early access work?</title>
-      <link>https://thecodesign.io/support/experience/early-access/</link>
-      <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://thecodesign.io/support/experience/early-access/</guid>
-      <description>Expect invites in November or December
-Feel free to sign up for an account, but understand that you will not receive an invite link until the platform is ready for testing. Our current ETA is November or December. So, right before Christmas. For more details, join our Discord chat.
- When, how, where can I get started? Early access gives users and creators the ability to test the platform and its new features.</description>
-    </item>
-    
-    <item>
-      <title>Music progressing with no sound</title>
-      <link>https://thecodesign.io/support/troubleshooting/no-sound/</link>
-      <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://thecodesign.io/support/troubleshooting/no-sound/</guid>
-      <description>Pressed play and you see that the music is progressing but there is no sound? Check some things first!
-Is this a Chorale issue? Are your speakers switched on? Are your headphones fully inserted? Is all of your audio hardware functioning properly? To test this, try playing from an alternative source or device. For example, YouTube!
-This may just be a system issue, where Chorale is not responsible for anything.</description>
-    </item>
     
     <item>
       <title>The reason you&#39;re here</title>
@@ -72,15 +19,6 @@ This may just be a system issue, where Chorale is not responsible for anything.<
       <guid>https://thecodesign.io/blog/introduction/</guid>
       <description>I am a code+design enthusiast; and I’m sure since you’re reading this, you’re one as well. I’m an avid reader as well, and for obvious reasons, I’m going to go ahead and assume you’re one too.
 I’ve been reading articles on the internet for a decade now, and I know the annoyance one feels when the article they’re presented with, is just a place-holder with more than 70% of padding. The noise- is too much; is increasing.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://thecodesign.io/support/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thecodesign.io/support/</guid>
-      <description>window.location = &#39;/contact&#39;; </description>
     </item>
     
     <item>
@@ -118,16 +56,6 @@ Reading this Privacy Policy should be pretty easy as we’ve made sure to avoid 
     </item>
     
     <item>
-      <title>Support</title>
-      <link>https://thecodesign.io/support/home/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thecodesign.io/support/home/</guid>
-      <description>Help &amp;amp; support How can we help you?     Hi! It looks like you found our super (well, I suppose kind of) hidden support center homepage! It is still a work in progress, as you can see, so feel free to give us hints on whether or not this page is actually good.
-Get a superior experience. Upgrade to a paid plan &amp;amp; support Chorale! With Pass or Pass Unlimited, you can unlcok all features and upload your own music.</description>
-    </item>
-    
-    <item>
       <title>Terms of Service (Legal)</title>
       <link>https://thecodesign.io/legal/terms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -145,16 +73,6 @@ Get a superior experience. Upgrade to a paid plan &amp;amp; support Chorale! Wit
       <guid>https://thecodesign.io/legal/</guid>
       <description>Switch to:
   Terms of Service Privacy Policy Open Source Software License Copy   </description>
-    </item>
-    
-    <item>
-      <title>What does open source entail?</title>
-      <link>https://thecodesign.io/support/open-source/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thecodesign.io/support/open-source/</guid>
-      <description>We once received a message from a visitor saying that they’d like to manually compile and use the open source code that powers Chorale to avoid any charges. After all, most people aren’t really sure on what “open source” actually means for them.
-Pretty much every part of Chorale is open source: the main website, the web-powered desktop client, the mobile progressive app, the API, even these docs are open source!</description>
     </item>
     
   </channel>

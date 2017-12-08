@@ -3,37 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://thecodesign.io/support/advanced/open-source/</loc>
-    <lastmod>2017-10-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thecodesign.io/support/troubleshooting/app-fails-to-start/</loc>
-    <lastmod>2017-10-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thecodesign.io/support/troubleshooting/cannot-listen-to-music/</loc>
-    <lastmod>2017-10-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thecodesign.io/support/experience/early-access/</loc>
-    <lastmod>2017-10-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thecodesign.io/support/troubleshooting/no-sound/</loc>
-    <lastmod>2017-10-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://thecodesign.io/blog/introduction/</loc>
     <lastmod>2017-10-21T00:00:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thecodesign.io/support/</loc>
   </url>
   
   <url>
@@ -62,7 +33,7 @@
   
   <url>
     <loc>https://thecodesign.io/</loc>
-    <lastmod>2017-10-23T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-21T00:00:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -76,16 +47,6 @@
   </url>
   
   <url>
-    <loc>https://thecodesign.io/support/</loc>
-    <lastmod>2017-10-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://thecodesign.io/support/home/</loc>
-  </url>
-  
-  <url>
     <loc>https://thecodesign.io/tags/</loc>
     <priority>0</priority>
   </url>
@@ -96,10 +57,6 @@
   
   <url>
     <loc>https://thecodesign.io/legal/</loc>
-  </url>
-  
-  <url>
-    <loc>https://thecodesign.io/support/open-source/</loc>
   </url>
   
 </urlset>
