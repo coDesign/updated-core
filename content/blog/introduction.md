@@ -1,7 +1,7 @@
 +++
 title = "The reason you're here"
 description = "The reason I decided to create coDesign. A brief introduction"
-image = "public/img/lookinside.png"
+image = "/img/introduction.jpg"
 type = "post"
 date = 2017-10-21
 +++
